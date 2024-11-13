@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALURAGEEK</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimun-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="preconnect" href="https://fonts.googleapis.com">
+      <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    />
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <img class="logo" src="img/logo.png" />
+      <ul class="nav-links" id="nav-links">
+        <li><a href="./MaisProdutos/index.html">Produtos</a></li>  
+      </ul>
+      <img src="img/menu-btn.png" id="menu-btn" class="menu-btn" />
+    </nav>
+    <div class="barra-superior">
+      <h2>AluraGeek</h2>
+    </div>
+   
+    <nav class="navbar">
+      
+      <button class="menu-btn">&#9776;</button> <div class="nav-links" id="nav-links"></div>
+
+      <ul class="nav-links" id="nav-links">  
+      </ul>
+      <img src="img/menu-btn.png" id="menu-btn" class="menu-btn" />
+    </nav>
+    <header>
+
+
+      <div class="container">
+        <h2>Adicionar Produtos:</h2>
+        <form action="index.html" id="formCadastro">
+          <div class="input-box">
+            <input type="text" placeholder="Nome..." id="input-nome">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Preço..." id="input-preco">
+          </div>
+          <div class="input-box">
+            <input type="file" id="input-imagem">
+          </div>
+          <div class="input-box button">
+            <button type="button" class="btn btn-guardar">Guardar</button>>
+
+            <form id="formCadastro">
+              <button type="button" onclick="limparFormulario()" class="btn ntn-limpar">Limpar</button>
+            </form>
+            
+            <script>
+              function limparFormulario() {
+                const campos = document.querySelectorAll('#formCadastro input');
+                campos.forEach(campo => {
+                  campo.value = '';
+                });
+              }
+            </script>
+          </div>
+          
+          </div>
+          
+        </form>
+      
+      <script type="text/javascript" src="js/script.js"></script>;
+      
+    </header>
+
+    <footer>
+      <div class="footer-content">
+        <h3>AluraGeek</h3>
+        <p>Chslleger AluraGeek 2024 criado por Valmir Goncalves</p>
+        
+      </div>
+    </footer>
+    
+  </body>
+</html>
